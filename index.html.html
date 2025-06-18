@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+  <link rel="stylesheet" href="caluclator.css">
+</head>
+<body>
+
+    <h1> Caluclator</h1>
+    <h2> Play with math</h2>
+    <div>
+        <input type="number" name="first" id="first" step="any"/>
+        <select name="ope" id="ope">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>            
+        </select>
+        <input type="number" name="second" id ="second" step="any"/>
+    </div>
+
+    <div>
+        <button onclick="cal()"> = </button>
+    </div>
+
+    <div>
+        <input type="number" name="" id="result" readonly=""/>
+    </div>
+    
+</body>
+<script type="text/javascript">
+    
+function cal(){
+      var op1 = document.getElementById('first').value;
+      var op2 = document.getElementById('second').value;
+      var ope = document.getElementById('ope').value;
+      var res;
+    if (ope =='+') {
+        var res= parseFloat(op1) + parseFloat(op2);
+    }
+    if (ope =='-') {
+        var res= parseFloat(op1)- parseFloat(op2);
+    }   
+    if (ope =='x') {
+        var res= parseFloat(op1)* parseFloat(op2);
+    }
+    if (ope =='/') {   
+        var res= parseFloat(op1) / parseFloat(op2);
+    }
+    document.getElementById('result').value= res;
+
+}
+    
+    </script>
+</html>

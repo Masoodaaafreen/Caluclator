@@ -1,0 +1,49 @@
+#first{
+   
+    text-align: center;
+    background: #ffffff;
+outline-color: rgb(254, 8, 8);
+
+}
+
+div{
+    justify-self:center
+    
+   
+}
+
+h1{
+    text-align: center;
+    color: cadetblue;
+}
+
+h2{
+ text-align: center;
+ text-size-adjust: 10px;
+
+}
+
+#second{
+text-align: center;
+background: #ffffff;
+outline-color: rgb(254, 8, 8);
+
+
+}
+
+#result{
+text-align: center;
+
+}
+
+button{
+
+
+}
+
+button[onclcik="cal()"]{
+    
+
+}
+
+
